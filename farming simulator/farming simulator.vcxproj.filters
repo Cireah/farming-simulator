@@ -21,15 +21,6 @@
     <ClCompile Include="src\Animalspecies.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Cow.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Sheep.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Pig.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\Farmer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -42,6 +33,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\Farmer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Cow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Sheep.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Pig.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

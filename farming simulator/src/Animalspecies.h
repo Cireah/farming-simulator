@@ -7,6 +7,8 @@ public:
 	void Buy();
 	void Sell();
 	void View();
+
 private:
-	int price = 0;
+	string userinput;
+	int decision;
 };
