@@ -1,10 +1,12 @@
 #pragma once
 #include "Includes.h"
 
-	class Animalspecies 
+class Animalspecies 
 {
 public:
 	void Buy();
 	void Sell();
 	void View();
+private:
+	int price = 0;
 };
