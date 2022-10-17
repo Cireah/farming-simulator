@@ -1,8 +1,7 @@
 #pragma once
 #include "Includes.h"
 
-class Main
+class Pig
 {
-private:
-	int money = 1000;
+	int price = 100;
 };

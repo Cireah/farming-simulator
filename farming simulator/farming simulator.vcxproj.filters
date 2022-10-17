@@ -30,15 +30,18 @@
     <ClCompile Include="src\Pig.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\Farmer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Main.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="src\Includes.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\Animalspecies.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Farmer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,6 +1,8 @@
 #include "Includes.h"
-#include "Main.h"
+#include "Farmer.h"
 
 int main()
 {
+	Farmer farmer;
+	farmer.Run();
 }

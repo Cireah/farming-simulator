@@ -141,14 +141,15 @@
   <ItemGroup>
     <ClCompile Include="src\Animalspecies.cpp" />
     <ClCompile Include="src\Cow.cpp" />
+    <ClCompile Include="src\Farmer.cpp" />
     <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="src\Pig.cpp" />
     <ClCompile Include="src\Sheep.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Animalspecies.h" />
+    <ClInclude Include="src\Farmer.h" />
     <ClInclude Include="src\Includes.h" />
-    <ClInclude Include="src\Main.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
