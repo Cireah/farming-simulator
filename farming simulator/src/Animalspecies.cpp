@@ -8,6 +8,7 @@
 void Animalspecies::Buy()
 {
 	Farmer budget;
+	budget.a = 1;
 	while (true)
 	{
 		cout << "What animal do you want to buy?\n1. Cow\n2. Sheep\n3. Pig\n4. Back\n";

@@ -4,6 +4,15 @@
 
 void Farmer::Run()
 {
+	int budget;
+	if (a = 0)
+	{
+		budget = 1000;
+	}
+	if (a > 0)
+	{
+		budget = GetMoney();
+	}
 	cout << money << "\n";
 	Animalspecies animalspecies;
 	while (true)
