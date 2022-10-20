@@ -7,6 +7,7 @@ public:
 	void Buy();
 	void Sell();
 	void View();
+	virtual void Animalprice();
 
 private:
 	string userinput;
