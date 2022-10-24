@@ -9,12 +9,18 @@ public:
 		cows = newCow;
 	}
 
-	void Animalprice() override
+	int GetCows() 
 	{
-		std::cout << "500 kr\n";
+		return cows;
+	}
+
+	int Animalprice() override
+	{
+		price = 500;
+		return price;
 	}
 
 private:
 	int price = 500;
-	int cows = 5;
+	int cows = 0;
 };
