@@ -1,27 +1,17 @@
 #include "Includes.h"
 #include "Farmer.h";
-#include "Animalspecies.h";
 
 void Farmer::Run()
 {
-	int budget;
-	if (a = 0)
-	{
-		budget = 1000;
-	}
-	if (a > 0)
-	{
-		budget = GetMoney();
-	}
-	cout << money << "\n";
+	std::cout << GetMoney() << "\n";
 	Animalspecies animalspecies;
 	while (true)
 	{
-		cout << "Welcome to your farm! You have a budget of " << money << " kr!\n";
-		cout << "1. Buy animal\n2. Sell animal\n3. View animals.\n4. Shutdown.\n";
-		cin >> userinput;
+		std::cout << "Welcome to your farm! You have a budget of " << GetMoney() << " kr!\n";
+		std::cout << "1. Buy animal\n2. Sell animal\n3. View animals.\n4. Shutdown.\n";
+		std::cin >> userinput;
 		try {
-			decision = stoi(userinput);
+			decision = std::stoi(userinput);
 		}
 		catch (...)
 		{
@@ -30,11 +20,11 @@ void Farmer::Run()
 
 		if (decision == 1)
 		{
-			animalspecies.Buy();
+			animalspecies.Buy(money);
 		}
 		else if (decision == 2)
 		{
-			animalspecies.Sell();
+			animalspecies.Sell(money);
 		}
 		else if (decision == 3)
 		{

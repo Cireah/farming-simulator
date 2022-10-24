@@ -1,33 +1,30 @@
 #include "Includes.h"
-#include "Animalspecies.h"
 #include "Cow.h"
 #include "Sheep.h"
 #include "Pig.h"
 #include "Farmer.h"
 
-void Animalspecies::Buy()
+void Animalspecies::Buy(int &money)
 {
-	Farmer budget;
-	budget.a = 1;
 	while (true)
 	{
-		cout << "What animal do you want to buy?\n1. Cow\n2. Sheep\n3. Pig\n4. Back\n";
-		cin >> userinput;
+		std::cout << "What animal do you want to buy?\n1. Cow\n2. Sheep\n3. Pig\n4. Back\n";
+		std::cin >> userinput;
 		try {
-			decision = stoi(userinput);
+			decision = std::stoi(userinput);
 		}
 		catch (...)
 		{
-			Buy();
+			Buy(money);
 		}
 
 		if (decision == 1)
 		{
-			cout << budget.GetMoney() << "\n";
+			std::cout << money << "\n";
 			Cow myCow;
 			myCow.Animalprice();
-			budget.SetMoney(budget.GetMoney() - 500);
-			cout << budget.GetMoney() << "\n";
+			money = money - 500;
+			std::cout << money << "\n";
 		}
 		else if (decision == 2)
 		{
@@ -46,7 +43,7 @@ void Animalspecies::Buy()
 	};
 }
 
-void Animalspecies::Sell()
+void Animalspecies::Sell(int &money)
 {
 
 }
@@ -58,5 +55,5 @@ void Animalspecies::View()
 
 void Animalspecies::Animalprice()
 {
-	cout << "0 kr\n";
+	std::cout << "0 kr\n";
 }

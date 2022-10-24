@@ -4,12 +4,12 @@
 class Animalspecies 
 {
 public:
-	void Buy();
-	void Sell();
+	void Buy(int &money);
+	void Sell(int &budget);
 	void View();
 	virtual void Animalprice();
 
 private:
-	string userinput;
+	std::string userinput = "";
 	int decision;
 };

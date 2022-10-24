@@ -1,12 +1,10 @@
 #pragma once
 #include "Includes.h"
-#include "Animalspecies.h"
 
 class Farmer
 {
 public:
 	void Run();
-	int a;
 	void SetMoney(int newMoney)
 	{
 		if (newMoney < 0) { money = MIN_MONEY; return; }
@@ -18,7 +16,7 @@ public:
 	}
 private:
 	const int MIN_MONEY = 0;
-	int money = budget;
-	string userinput;
+	int money = 1000;
+	std::string userinput;
 	int decision;
 };

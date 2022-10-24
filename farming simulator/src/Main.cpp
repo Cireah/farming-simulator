@@ -3,6 +3,6 @@
 
 int main()
 {
-	Farmer farmer;
-	farmer.Run();
+	Farmer budget;
+	budget.Run();
 }

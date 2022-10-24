@@ -3,4 +3,5 @@
 #include <string>
 #include <iostream>
 #include <vector>
-using namespace std;
+#include "Animalspecies.h"
+#include "Farmer.h"

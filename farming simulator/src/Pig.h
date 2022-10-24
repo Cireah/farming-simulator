@@ -1,6 +1,5 @@
 #pragma once
 #include "Includes.h"
-#include "Animalspecies.h"
 
 class Pig : public Animalspecies
 {
@@ -12,7 +11,7 @@ public:
 
 	void Animalprice() override
 	{
-		cout << "100 kr\n";
+		std::cout << "100 kr\n";
 	}
 
 private:
