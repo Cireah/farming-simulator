@@ -4,23 +4,23 @@
 class Sheep : public Animalspecies
 {
 public:
-	void SetSheep(int newSheep)
+	void SetSheep(int newPrice)
 	{
-		sheep = newSheep;
+		price = newPrice;
 	}
 
 	int GetSheep()
 	{
-		return sheep;
+		return price;
 	}
 
-	int Animalprice() override
+	void AnimalColour() override
 	{
-		price = 200;
-		return price;
+		colour = "white";
+		std::cout << colour;
 	}
 
 private:
 	int price = 200;
-	int sheep = 0;
+	std::string colour;
 };
